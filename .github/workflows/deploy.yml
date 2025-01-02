@@ -5,10 +5,11 @@ on:
     branches:
       -main
 
+# Workflow는 여러개의 Job으로 이루어질 수 있고
 jobs:
   My-Deploy-Job:
     runs-on: ubuntu-latest
-
+    # 하나의 Job은 여러개의 Step으로 이루어져있다.
     steps:
       - name: Hello World 출력하기
         run: echo "Hello World"
